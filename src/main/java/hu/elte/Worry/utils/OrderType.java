@@ -2,6 +2,6 @@ package hu.elte.worry.utils;
 
 public enum OrderType {
 
-    Hot dog, Pizza, Hamburger, Diet coke, coke, sandwich, extra cheese, extra chili
+    Hot_Dog, Pizza, Hamburger, Diet_coke, coke, sandwich, extra_cheese, extra_chili
     
 }
