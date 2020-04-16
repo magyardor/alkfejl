@@ -1,4 +1,4 @@
-# Alkalmazások fejlesztése
+# No hurry, no worry!
 ## Alkalmazás rövid ismertetése:
 
 Biztos veled is előfordult már, hogy étteremben vagy bárban a pincér már fut hozzád, mikor még Te a menü első oldalánál tartasz és így kényszerből rendeltél..
