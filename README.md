@@ -56,3 +56,58 @@ Dolgozó kollégánk az asztalhoz siet és az asztal nullázásával már fogadj
 * pincér / pultos : olyan felhasználó, aki betekintést nyer az összes asztal rendeléseibe, és nullázni tudja az asztalt.
 * üzletvezető: olyan felhasználó, akinek joga van a rendelésekhez fűzött megjegyzéseket módositani, valamint az azokat író felhasználókat moderálni. Egy bejelentkezett felhasználót beállithat dolgozónak, létszámbővités esetén
 * rendszeradminisztrátor: olyan felhasználó, akinek joga van pultosokat, pincéreket, üzletvezetőket létrehoznia, moderátori jogokkal bír, valamint természetesen az egyszerű felhasználó jogai is megilletik
+
+
+## Fejlesztői környezet
+
+A backend-hez használt technológiák
+
+A fejlesztés során a Spring keretrendszer (legfrissebb stabil 2.2.0-ás verziójának) segítségével készítünk el egy Java (8) alapú alkalmazást, melynek menedzselésének és build folyamatának automatizálása során a Mavent hívjuk segítségül. A fejlesztés során az Apache NetBeans (11) integrált fejlesztői környezetet használjuk. A Spring Boot függőségek közül az alábbiakat vesszük igénybe:
+
+   * Spring Data JPA (Spring Data-át és Hibernate-et használva a Java Persistence API segítségével SQL-ben tárolja az adatokat),
+   * Spring Boot DevTools (gyors alkalmazás újraindításokat, valós idejű újratöltést és különböző konfigurációs lehetőségeket biztosít),
+   * H2 Database (gyors memóriában tárolt adatbázist biztosít, ami támogatja a JDBC API-t),
+   * Lombok (annotációkat tartalmazó könyvtár a kód elburjánzás megelőzésének érdekében),
+   * Spring Web (támogatja a webes alkalmazások készítését, kiváltképp a REST alapokon mozgókét SPRING MVC felhasználásával),
+   * Spring Security (testreszabható autentikációs és elérés-kezelő keretrendszer).
+
+## Adatbázis terv (UML)
+.png
+
+## Könyvtárstuktúra
+
+### Gyökérkönyvtár
+
+* **.git mappa** *(verziókezelő számára szükséges fájlokat és almappákat tartalmaz)*
+* **.mvn mappa** *(a Maven build rendszer számára szükséges fájlokat és almappákat tartalmaz)*
+* **src mappa** *(a program forráskódját, valamint néhány a fordításhoz és az egyes Spring Boot komponensek kielégítő működéséhez információt tároló konfigurációs fájlt tartalmazó mappa)*
+   * **main mappa** *(a forráskód lényegi része, az objektumok implementációja)*
+      * **java mappa** *(a mappa tartalmazza a forráskód package-ek szerint tagolt mappaszerkezetét)*
+         * **hu mappa** *(a hu package-et jelképező mappa)*
+            * **elte mappa** *(az elte package-et jelképező mappa)*
+               * **worry mappa** *(a worry package-t jelképező mappa)*
+                  * **controllers mappa** *(a mappa tartalmazza azokat a forrásfájlokat, amelyek az egyes entitásokat kezelik a REST alapú alkalmazás elvei szerint, különböző mapping-eket hajthatunk végre velük)*
+                  * **entities mappa** *(a mappa tartalmazza azokat a forrásfájlokat, amelyek megvalósítják az egyes entitásokat)*
+                  * **repositories mappa** *(a mappa tartalmazza azokat a forrásfájlokat, amelyek az egyes entitások számára lehetővé teszik a CRUD hívásokat)*
+                  * **security mappa** *(a mappa tartamazza az autentikációhoz szükséges forrásfájlokat)*
+                  * **utils mappa** *(a mappa különböző mellékes forrásfájlokat tartalmaz, főleg különböző felsorolókat)*
+                  * **WorryApplication.java** *(az alkalmazás belépési pontját tartalmazó forrásfájl)*
+      * **resources mappa** *(a mappa tartalmazza a programhoz szükséges "nyersanyagokat", azokat a fájlokat, amelyek nem nevezhetőek kifejezetten forráskódnak, mégis elengedhetetlenek a kielégítő működéshez)*
+         * **application.properties** *(tartalmazza az alkalmazás egyes függőségeinek értékadás-szerű utasításokkal való konfigurációját)*
+         * **important.sql** *(a H2 Database számára szükséges SQL forrásfájl, amely tartalmazza azokat az utasításokat, amelyeket az adatbázisban a program futása előtt el kell végezni)*
+* **.gitignore** *(a fájl tartalmazza azokat a fájlokat (vagy mintákat), amelyeket a verziókezelő rendszernek figyelmen kívül kell hagynia)*
+* **mvnw és mwnw.cmd** *(a Maven-Wrapper-hez szükségesek, letöltik a megfelelő Maven verziót (ha nem találja), lehetővé teszik a Maven futtatását akkor is, ha azt nem találják a számítógépen - a mvnw a Linux rendszereken, a mvnw.cmd pedig a Windows rendszerek használható)*
+* **pom.xml** *(a Maven által használt konfigurációs fájl, amely információkat tartalmaz a projektről és annak felépítéséről, kezdve annak nevétől, a package-ek strúktúráján át az egyes függőségek leírásáig minden fontos adattal a build folyamatról és az egyes pluginokról)*
+* **README.md** *(a verziókövető rendszer (pl. Git) által alkalmazott szöveges fájl, mely arra szolgál, hogy a projekt iránt érdeklődők tájékozódhassanak azokról a fontos információkról, amelyeket a fejlesztők megosztanának velük (például a könyvtárstruktúra részletes leírását, remélem mindenki elolvassa idáig haha))*
+
+## Végpont tervek
+
+### Egyszerű végpontok
+  * ```.../bill```
+  * ```.../order```
+  * ```.../user```
+  * ```.../com```
+ 
+### H2 Adatbázis végpontja
+
+### Hiba végpont
