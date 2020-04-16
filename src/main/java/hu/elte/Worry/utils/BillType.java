@@ -1,6 +1,4 @@
-BillType:
-
-package hu.elte.ballerz.utils;
+package hu.elte.worry.utils;
 
 public enum BillType {
     
