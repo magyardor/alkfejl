@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -32,10 +33,12 @@ public class UserController {
     @Autowired
     private UserRepository userRepository;
     
+    
+    
     @Autowired 
     private AuthenticatedUser authenticatedUser;
 
-    @PostMapping("register")
+    @PostMapping("/register")
     public ResponseEntity<User> register(@RequestBody User user) {
         Optional<User> oUser = userRepository.findByUsername(user.getUsername());
         if (oUser.isPresent()) {
@@ -47,7 +50,12 @@ public class UserController {
         return ResponseEntity.ok(userRepository.save(user));
     }
 
-    @PostMapping("login")
+    @GetMapping("")
+    public ResponseEntity<Iterable<User>> get(){
+        return ResponseEntity.ok(userRepository.findAll());
+    }
+    
+    @PostMapping("/login")
     public ResponseEntity login() {
       return ResponseEntity.ok(authenticatedUser.getUser());
     } 

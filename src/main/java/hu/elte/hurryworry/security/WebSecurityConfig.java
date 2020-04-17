@@ -26,50 +26,52 @@ import org.springframework.security.web.AuthenticationEntryPoint;
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(securedEnabled = true)
-@Secured({ "ROLE_USER", "ROLE_ADMIN" })
+//@Secured({ "ROLE_USER", "ROLE_ADMIN" })
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
-@Override
+    @Override
     protected void configure(HttpSecurity http) throws Exception {
-      http
-    .cors()
-        .and()
-    .csrf().disable()
-    .authorizeRequests()
-        .antMatchers("/h2/**", "/users/register").permitAll()   // important!
-        .anyRequest().authenticated()
-        .and()
-    .httpBasic()
-        .and()
-    .headers()      // important!
-        .frameOptions().disable()
-        .and()
-    .sessionManagement()
-        .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
-    }     
+        http
+                .cors()
+                .and()
+                .csrf().disable()
+                .authorizeRequests()
+                .antMatchers("/h2/**", "/users/register").permitAll() // important!
+                .anyRequest().authenticated()
+                .and()
+                .httpBasic()
+                .and()
+                .headers() // important!
+                .frameOptions().disable()
+                .and()
+                .sessionManagement()
+                .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+    }
 
     @Autowired
-private UserDetailsService userDetailsService;
+    private UserDetailsService userDetailsService;
 
-@Autowired
-protected void configureAuthentication(AuthenticationManagerBuilder auth) throws Exception {
-    auth
-        .userDetailsService(userDetailsService)
-        .passwordEncoder(passwordEncoder());
-}
+    @Autowired
+    protected void configureAuthentication(AuthenticationManagerBuilder auth) throws Exception {
+        auth
+                .userDetailsService(userDetailsService)
+                .passwordEncoder(passwordEncoder());
+    }
+
     @Autowired
     protected void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
- auth
-        .inMemoryAuthentication()
-        .withUser("user").password("$2a$04$YDiv9c./ytEGZQopFfExoOgGlJL6/o0er0K.hiGb5TGKHUL8Ebn..").roles("USER");
+        auth
+                .inMemoryAuthentication()
+                .withUser("user").password("$2a$04$YDiv9c./ytEGZQopFfExoOgGlJL6/o0er0K.hiGb5TGKHUL8Ebn..").roles("USER");
     }
 
     @Bean
     public BCryptPasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
-
-    private AuthenticationEntryPoint getBasicAuthEntryPoint() {
+    /*
+    @Bean
+    public AuthenticationEntryPoint getBasicAuthEntryPoint() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    }*/
 }
