@@ -119,13 +119,13 @@ A fejlesztés során a Spring keretrendszer (legfrissebb stabil 2.2.0-ás verzi�
   
 ### Végpontok működése
 Bemutatás szekvenciáldiagram formájában. Minden eddigi végpont így néz ki.
-![Szek](src/main/resources/szekvencia.PNG)
+![Szek](src/main/resources/szekvencia.png)
 
 ### Szerepkörök és hozzáférési jogok
 Use case diagrammok segítségével mutatjuk be, hogy egyes jogokkal rendelkező felhasználók mikhez férnek hozzá.
 
-![Admin](src/main/resources/adminn.PNG)
+![Admin](src/main/resources/admin.png)
 
-![Staff](src/main/resources/Staff.PNG)
+![Staff](src/main/resources/Staff.png)
 
-![Guest](src/main/resources/Guest.PNG)
+![Guest](src/main/resources/Guest.png)
