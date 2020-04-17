@@ -111,3 +111,6 @@ A fejlesztés során a Spring keretrendszer (legfrissebb stabil 2.2.0-ás verzi�
 ### H2 Adatbázis végpontja
 
 ### Hiba végpont
+
+### Végpontok működése
+Bemutatás szekvenciáldiagram formájában. Minden eddigi végpont így néz ki.
