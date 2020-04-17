@@ -103,6 +103,7 @@ A fejlesztés során a Spring keretrendszer (legfrissebb stabil 2.2.0-ás verzi�
 ## Végpont tervek
 
 ### Egyszerű végpontok
+
   * ```.../bill```
   * ```.../order```
   * ```.../user```
@@ -110,13 +111,24 @@ A fejlesztés során a Spring keretrendszer (legfrissebb stabil 2.2.0-ás verzi�
  
 ### H2 Adatbázis végpontja
 
+  * ```.../h2-console```
+  
 ### Hiba végpont
 
+  * ```.../error```
+  
 ### Végpontok működése
 Bemutatás szekvenciáldiagram formájában. Minden eddigi végpont így néz ki.
-![](src/main/resources/szekvencia.PNG)
+![Szek](src/main/resources/szekvencia.PNG)
 
 ### Szerepkörök és hozzáférési jogok
 Use case diagrammok segítségével mutatjuk be, hogy egyes jogokkal rendelkező felhasználók mikhez férnek hozzá.
 
 Admin
+![Admin](src/main/resources/adminn.PNG)
+
+Staff
+![Staff](src/main/resources/Staff.PNG)
+
+Guest
+![Guest](src/main/resources/Guest.PNG)
