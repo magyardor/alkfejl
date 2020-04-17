@@ -124,11 +124,8 @@ Bemutatás szekvenciáldiagram formájában. Minden eddigi végpont így néz ki
 ### Szerepkörök és hozzáférési jogok
 Use case diagrammok segítségével mutatjuk be, hogy egyes jogokkal rendelkező felhasználók mikhez férnek hozzá.
 
-Admin
 ![Admin](src/main/resources/adminn.PNG)
 
-Staff
 ![Staff](src/main/resources/Staff.PNG)
 
-Guest
 ![Guest](src/main/resources/Guest.PNG)
