@@ -114,4 +114,4 @@ A fejlesztés során a Spring keretrendszer (legfrissebb stabil 2.2.0-ás verzi�
 
 ### Végpontok működése
 Bemutatás szekvenciáldiagram formájában. Minden eddigi végpont így néz ki.
-![SEQUENCE](src/main/resources/szekvencia.png)
+![](src/main/resources/szekvencia.PNG)
