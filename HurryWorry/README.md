@@ -9,7 +9,7 @@ Ha végeztél a rendelésed elfogyasztásával és rendezted a számlát, nincs 
 Dolgozó kollégánk az asztalhoz siet és az asztal nullázásával már fogadják is a következő vendéget!
 
 ## Az alkalmazás funkcionális követelményei:
-
+(Külön szerepkörök még nem érhetőek el, mindenki tud létrehozni számlákat és adni hozzá dolgokat.)
 * Vendégek: 
   - Amit csinálhatnak:
     - Hozzáférnek a számlához.
@@ -71,10 +71,6 @@ A fejlesztés során a Spring keretrendszer (legfrissebb stabil 2.2.0-ás verzi�
    * Spring Web (támogatja a webes alkalmazások készítését, kiváltképp a REST alapokon mozgókét SPRING MVC felhasználásával),
    * Spring Security (testreszabható autentikációs és elérés-kezelő keretrendszer).
 
-## Adatbázis terv (UML)
-.png
-
-## Könyvtárstuktúra
 
 ### Gyökérkönyvtár
 
