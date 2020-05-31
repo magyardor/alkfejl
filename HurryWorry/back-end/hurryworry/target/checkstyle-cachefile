@@ -1,0 +1,20 @@
+#Sun May 31 17:59:19 CEST 2020
+configuration*?=91C28D6507B97B5568E7674BA75B482DCFABF43C
+C\:\\Users\\Gerg\u0151\\Desktop\\FairShare-master\ (2)\\HurryWorry\\back-end\\hurryworry\\src\\main\\java\\hu\\elte\\fairshare\\controller\\UserController.java=1590938501967
+C\:\\Users\\Gerg\u0151\\Desktop\\FairShare-master\ (2)\\HurryWorry\\back-end\\hurryworry\\src\\main\\java\\hu\\elte\\fairshare\\utils\\Currency.java=1590938664935
+C\:\\Users\\Gerg\u0151\\Desktop\\FairShare-master\ (2)\\HurryWorry\\back-end\\hurryworry\\src\\main\\resources\\application.properties=1589925330000
+C\:\\Users\\Gerg\u0151\\Desktop\\FairShare-master\ (2)\\HurryWorry\\back-end\\hurryworry\\src\\main\\java\\hu\\elte\\fairshare\\security\\BasicEntryPoint.java=1590938636255
+C\:\\Users\\Gerg\u0151\\Desktop\\FairShare-master\ (2)\\HurryWorry\\back-end\\hurryworry\\src\\main\\java\\hu\\elte\\fairshare\\repository\\ItemRepository.java=1590938595840
+C\:\\Users\\Gerg\u0151\\Desktop\\FairShare-master\ (2)\\HurryWorry\\back-end\\hurryworry\\src\\main\\java\\hu\\elte\\fairshare\\security\\SecurityConfig.java=1590938646903
+C\:\\Users\\Gerg\u0151\\Desktop\\FairShare-master\ (2)\\HurryWorry\\back-end\\hurryworry\\src\\main\\java\\hu\\elte\\fairshare\\repository\\ReceiptRepository.java=1590938604647
+C\:\\Users\\Gerg\u0151\\Desktop\\FairShare-master\ (2)\\HurryWorry\\back-end\\hurryworry\\src\\main\\java\\hu\\elte\\fairshare\\controller\\ReceiptController.java=1590938484911
+C\:\\Users\\Gerg\u0151\\Desktop\\FairShare-master\ (2)\\HurryWorry\\back-end\\hurryworry\\src\\main\\java\\hu\\elte\\fairshare\\security\\AuthenticatedUser.java=1590938629119
+C\:\\Users\\Gerg\u0151\\Desktop\\FairShare-master\ (2)\\HurryWorry\\back-end\\hurryworry\\src\\main\\java\\hu\\elte\\fairshare\\utils\\UserRole.java=1590938667199
+module-resource*?\:checkstyle-xpath-suppressions.xml=E472ECD8C3C7528D602AFBE7951A794C052CED8D
+module-resource*?\:checkstyle-suppressions.xml=706F33CB03D03DC241E1581E19D90BE1CF3454CA
+C\:\\Users\\Gerg\u0151\\Desktop\\FairShare-master\ (2)\\HurryWorry\\back-end\\hurryworry\\src\\main\\java\\hu\\elte\\fairshare\\controller\\ItemController.java=1590938473655
+C\:\\Users\\Gerg\u0151\\Desktop\\FairShare-master\ (2)\\HurryWorry\\back-end\\hurryworry\\src\\main\\java\\hu\\elte\\fairshare\\entities\\User.java=1590938584368
+C\:\\Users\\Gerg\u0151\\Desktop\\FairShare-master\ (2)\\HurryWorry\\back-end\\hurryworry\\src\\main\\java\\hu\\elte\\fairshare\\repository\\UserRepository.java=1590938612583
+C\:\\Users\\Gerg\u0151\\Desktop\\FairShare-master\ (2)\\HurryWorry\\back-end\\hurryworry\\src\\main\\java\\hu\\elte\\fairshare\\entities\\Receipt.java=1590938575848
+C\:\\Users\\Gerg\u0151\\Desktop\\FairShare-master\ (2)\\HurryWorry\\back-end\\hurryworry\\src\\main\\java\\hu\\elte\\fairshare\\entities\\Item.java=1590938514831
+C\:\\Users\\Gerg\u0151\\Desktop\\FairShare-master\ (2)\\HurryWorry\\back-end\\hurryworry\\src\\main\\java\\hu\\elte\\fairshare\\security\\BasicUserDetailsService.java=1590938641519

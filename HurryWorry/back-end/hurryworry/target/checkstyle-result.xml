@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.29">
+<file name="C:\Users\Gergő\Desktop\FairShare-master (2)\HurryWorry\back-end\hurryworry\src\main\java\hu\elte\fairshare\hurryworryApplication.java">
+<error line="15" column="14" severity="error" message="Name &apos;hurryworryApplication&apos; must match pattern &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
+</file>
+</checkstyle>
